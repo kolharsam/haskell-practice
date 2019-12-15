@@ -1,10 +1,7 @@
-# haskell-practice problems
+# haskell-practice
 
-#### TO RUN THE PROGRAMS
+#### How to run?
 
 ```bash
-
-	ghc -o main main.hs
-
+ghc -o main main.hs
 ```
-
