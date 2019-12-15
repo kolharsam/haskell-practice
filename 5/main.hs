@@ -38,6 +38,23 @@ main = do
     print (zip [1,3,5] [23, 3])
 
 
+-- Problem Statement
+
+
+-- Write a function 
+
+-- \verb|zip : int list * int list -> int * int|zip:intlist*intlist->int*int list that given two lists of integers
+-- creates consecutive pairs, and stops when one of the lists is empty. 
+-- For example: \verb|zip ([1,2,3], [4, 6]) = [(1,4), (2,6)]|zip([1,2,3],[4,6])=[(1,4),(2,6)].
+
+
+
+-- Challenge: Write a version \verb|zipRecycle|zipRecycle of \verb|zip|zip, 
+-- where when one list is empty it starts recycling from its start until the other list completes.
+-- For example: \verb|zipRecycle ([1,2,3], [1, 2, 3, 4, 5, 6, 7]) =|
+-- zipRecycle([1,2,3],[1,2,3,4,5,6,7])= \verb|[(1,1), (2,2), (3, 3), (1,4), (2,5), (3,6), (1,7)]|[(1,1),(2,2),(3,3),(1,4),(2,5),(3,6),(1,7)]
+
+
 -- Note:
 -- when I do just this:
 
