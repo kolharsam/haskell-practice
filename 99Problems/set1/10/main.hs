@@ -5,8 +5,7 @@
 -- encode "aaaabccaadeeee"
 -- Output: [(4,'a'),(1,'b'),(2,'c'),(2,'a'),(1,'d'),(4,'e')]
 
-twoPack :: Eq a => [a] -> [[a]
-                          ]
+twoPack :: Eq a => [a] -> [[a]]
 twoPack [] = []
 twoPack [x] = [[x]]
 twoPack (x:xs) = if x `elem` (head (twoPack xs))
@@ -23,8 +22,6 @@ encode :: Eq a => [a] -> [(Integer, a)]
 encode [] = []
 encode li = map lengthCount (twoPack li)
 
-
--- more solutions can be found here
 
 
 main :: IO()
